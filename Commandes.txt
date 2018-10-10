@@ -5,24 +5,25 @@ CD -> Change Directory -> Aller d'un dossier à l'autre
 .. -> revenir dans le dossier précédent
 
 
-git add (espace) nom du fichier  -> pour ajouter un fichier vers la boite de sauvegarde de git
+git add (espace) nom du fichier  -> pour ajouter un fichier vers la boite de sauvegarde de git (== le stage!)
 exemple: git add texte.txt
 Pour ajouter tous les fichiers d'une même extension: git add *.extension
 
 git status : pour voir quels fichiers/dossiers vont être sauvegarder et ceux qui ne vont pas l'être (pareil pour les modifications)
-(ceux qui sont dans la boite de sauvegarde)
+(ceux qui sont dans la boite de sauvegarde (==Stage!)
 
-git rm (espace) nom du fichier -> pour enlever un fichier de la boite de sauvegarde
+git rm (espace) nom du fichier -> pour enlever un fichier de le Stage!
 
 git commit -m "commentaire" : 
 le commit sert à sauvegarder et le -m sert à mettre un commantaire. On ne peut pas faire l'un sans l'autre car tu dois commenter ta sauvegarde. La boite de sauvegarde est vidée et sauvée
-Si on fait un git commit sans commenter, on arrive sur une page...
+
+Attention! Si on fait un git commit sans commenter, on arrive sur une page V.I pour sortir de cette page: appuyer sur i (pour insert), écrire un commentaire, appuyer sur esc puis écrire " :wq " + enter
 
 git config --truc a changer (espace) "changement"
 
 git log : voir les modifications effectuées du plus récent au plus ancien. Il donne l'auteur et l'adresse email ainsi que la date de modification et le commentaire
 
-git rm --cached* : enlever tous les fichiers du stage (sauvegarde git, serveur git). Ca enlève aussi le trackage.git add dossier 
+git rm --cached* : enlever tous les fichiers du stage . Ca enlève aussi le trackage.git add dossier 
 
 
 
