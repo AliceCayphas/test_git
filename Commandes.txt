@@ -18,3 +18,9 @@ git commit -m "commentaire" :
 le commit sert à sauvegarder et le -m sert à mettre un commantaire. On ne peut pas faire l'un sans l'autre car tu dois commenter ta sauvegarde. La boite de sauvegarde est vidée et sauvée
 
 git config --truc a changer (espace) "changement"
+
+git log : voir les modifications effectuées du plus récent au plus ancien. Il donne l'auteur et l'adresse email ainsi que la date de modification et le commentaire
+
+git rm --cached* : enlever tous les fichiers du stage (sauvegarde git, serveur git). Ca enlève aussi le trackage.
+
+
