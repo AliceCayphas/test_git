@@ -1,0 +1,8 @@
+MKDIR --> Créer un dossier
+
+CD -> Change Directory -> Aller d'un dossier à l'autre
+
+.. -> revenir dans le dossier précédent
+
+
+git add (espace) nom du fichier  -> pour ajouter un fichier vers git
