@@ -4,6 +4,8 @@ CD -> Change Directory -> Aller d'un dossier à l'autre
 
 .. -> revenir dans le dossier précédent
 
+git init -> c'est une commande qui sert à "mettre" le dossier dans git. Il faut l'initialiser dans le projet. Ca créera un dossier .git dans le dossier du projet!
+
 
 git add (espace) nom du fichier  -> pour ajouter un fichier vers la boite de sauvegarde de git (== le stage!)
 exemple: git add texte.txt
@@ -25,6 +27,21 @@ git log : voir les modifications effectuées du plus récent au plus ancien. Il do
 
 git rm --cached* : enlever tous les fichiers du stage . Ca enlève aussi le trackage.git add dossier 
 
+git branch : indique tous les branches existantes. L'étoile indique la branche sur laquelle nous nous trouvons.
 
+git branch (espace) le nom d'une nouvelle branche : sert à créer une nouvelle branche à partir de la ou nous nous trouvons
 
+git checkout (espace) nom de la branche: on se déplace vers cette branche.
 
+Si on travaille sur une autre branche et qu'on fait des changements, créer des fichiers, etc et qu'on les sauvegarde sur cette branche. Ce travail ne sera pas sauvegardé ailleurs. 
+C'est tres utile pour faire des modifs pour tester mais sans modifier le travail effectué.
+Si on ne sauvegarde rien du tout, ces modif et nouveaux fichiers sont "flottants" et apparaissent partout.
+
+git merge nom de la branche: permet de fusionner la branche parallele avec le master. Ca change le master mais pas la branche fusionnée.
+En général, on supprime la branche qu'on a mergé via...
+
+git branch -d test_branch (attention, petit d car si on n'a pas mergé, il ne la supprimera pas. Si on fait avec un grand D, ca supprimera quoi qu'il arrive)
+
+git diff nom du ficher : montrer ce qu'il y a comme différence entre la dernière sauvegarde et la dernière modification
+
+git checkout nom du fichier :  revient a l'état dans lequel il etait avant la dernière sauvegarde. On peut l'appliquer sur les dossiers et sur l'entiereté du travail via checkout "."
