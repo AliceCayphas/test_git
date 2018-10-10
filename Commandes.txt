@@ -45,3 +45,9 @@ git branch -d test_branch (attention, petit d car si on n'a pas mergé, il ne la 
 git diff nom du ficher : montrer ce qu'il y a comme différence entre la dernière sauvegarde et la dernière modification
 
 git checkout nom du fichier :  revient a l'état dans lequel il etait avant la dernière sauvegarde. On peut l'appliquer sur les dossiers et sur l'entiereté du travail via checkout "."
+
+git tag nom du tag : pour créer un nouveau tag
+
+git tag : afficher les tags
+
+créer un tag, sert a partager une version satisfaisante. En partageant un tag, on partage le travail sauvegardé au moment ou le tag a été effectué. sans prendre en compte les modifs en cours.
